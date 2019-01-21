@@ -1,0 +1,46 @@
+/*
+Theme Name: Gist
+Theme URI: https://www.candidthemes.com/themes/gist-clean-minimal-wordpress-blog-theme/
+Author: candidthemes
+Author URI: http://www.candidthemes.com/
+Description: Gist is best ever crafted free WordPress theme for Blog, news and Magazine. Gist is a simple, easy to use, modern and creative, user friendly WordPress theme with typography, fonts and color options. In addition Gist is responsive, cross browser compatible and child theme ready. Gist comes with added custom widgets for social, recent post and author, sticky sidebar options, footer widget, sidebar options, meta option, copyright option, social options etc. 
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gist
+Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, blog
+*/
+ 
+/* Add Custom CSS after this line */
+
+@charset 'UTF-8';
+@import 'base/fonts';
+@import 'base/colors';
+@import 'helpers/mixins';
+
+// parts
+@import 'layout/all';
+@import 'layout/nav';
+@import 'layout/sidebar';
+@import 'layout/content';
+@import 'layout/page';
+@import 'layout/widgets';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+
+/*
+ * Globals
+ */
+
+body {
+    font-family: $font-default;    
+    color: $color-theme;
+}
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.4rem; }

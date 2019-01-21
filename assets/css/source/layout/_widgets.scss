@@ -1,0 +1,98 @@
+.widget {
+    height: auto;
+    overflow: hidden;    
+    margin: 0 0px 50px;
+    padding: 0px 0 0 20px;
+    
+    ul {
+        margin: 20px 0px 0;
+        padding: 0; 
+        list-style-type: none; 
+        
+        li {
+            color: #949494;
+            padding: 0 0 0 0px;
+            a {
+                color:$color-link;
+                text-transform: capitalize;
+            }
+            &:before {
+                content: '\203a \00a0\00a0';
+                margin: 0;
+            }    
+        }
+    }   
+}
+
+.widget-area {
+    
+    .widget_search {
+        margin-top:25px;    
+        .search-form {
+            position: relative;
+        }
+
+        .search-form input.search-field {
+            border: 1px solid #4ea371;
+            width: 100% !important;
+            border-radius: 0;
+            padding: 10px 20px;
+        }
+
+        .search-form input[type=submit] {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 0px;
+            height: auto;
+            border: 0px;
+            color: #fff;
+            background: #4ea371;
+            line-height: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+    }
+    .widget-title {
+        color: #6f7173;
+        border-bottom: solid #eee 1px;
+        font-weight: bold;
+        padding-bottom: 12px;
+    }
+    
+    .widget_categories {
+        .cat-item {
+            float:left;
+            width: 50%;
+            padding: 5px 0px 0;
+        }
+    }
+    .widget_tag_cloud {
+        .tagcloud {
+            .tag-cloud-link {
+                background: #eee;
+                padding: 0px 10px;
+                color:$color-link;
+            }
+        }
+    }
+    .widget_recent_comments {
+        .recentcomments {
+            padding: 5px 0px 0;
+        }
+        
+    }
+}
+
+.widget_archive {
+    ul  {
+        margin: 25px 0px 0;
+        li {            
+            float:left;
+            width: 50%;      
+            padding: 5px 0px 0;
+        }
+    }
+}    

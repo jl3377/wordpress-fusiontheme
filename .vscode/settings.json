@@ -1,0 +1,47 @@
+{
+    "git.ignoreLimitWarning": true,    
+     // only this files are include to compilation and no need included partials files 
+    "liveSassCompile.settings.includeItems": [      
+       "assets/css/source/style.scss"
+    ],
+    // vendor prefixes to unsupported CSS properties 
+    "liveSassCompile.settings.autoprefix": [
+       "> 1%",
+       "last 3 version",
+       "Chrome >= 35",
+       "Firefox >= 38",
+       "Edge >= 10",
+       "Explorer >= 10",
+       "ie >= 10",
+       "iOS >= 8",
+       "Safari >= 8",
+       "Android 2.3",
+       "Android >= 4",
+       "Opera >= 12"
+    ],
+    // exclude files
+    "liveSassCompile.settings.excludeList": [      
+       ".vscode/**"
+    ],
+    // generate map, default is true
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.formats": [      
+       // css programmer
+       {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/assets/css/"
+       },
+       // dist compressed version
+       {
+          "extensionName": ".min.css",
+          "format": "compressed",
+          "savePath": "/assets/css/dist/"
+      }
+    ],
+    "liveServer.settings.port": 5503,
+ 
+    // terminal configuration
+    "terminal.integrated.cursorBlinking": true
+ 
+ }

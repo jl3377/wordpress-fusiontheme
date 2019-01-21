@@ -1,0 +1,62 @@
+.navbar {
+    
+    background-color: rgb(40,40,41); 
+    @include media-query(desktop) {
+        height:75px!important;
+    }
+    
+    .navbar-brand {    
+        img {             
+            //padding: 5px 0px 0px;
+        }
+        .title {
+            padding: 0px 10px;
+            span {
+               padding: 0 0 0 10px;
+            }
+        }
+    }
+    #main-menu {
+        .menu-item {
+            margin:0px 30px 0 0;
+            
+            a{
+                color:$color-link;
+            }
+        }
+    }
+    
+    
+    #navbarCollapse {
+        #main-menu {
+            @include media-query(responsive){
+                margin: 10px 0 0 0;
+            }
+            .menu-item  {
+                @include media-query(responsive){
+                    font-size: 1.2rem;
+                    margin-left: 15px;
+                    padding: 10px 0px;
+                    border-top: solid #484c50 1px;
+                }
+            }    
+        }
+        #social {
+            @include media-query(responsive) {
+                flex-direction: row;
+            }    
+            .nav-item {
+                @include media-query(responsive) {                
+                    padding: 10px 0 0 20px
+                }        
+            }    
+            .sozialize {
+                padding: 9px 12px 0 0;
+                color: #c6c6c6;
+                @include media-query(responsive) {
+                    padding:18px 0px 0 15px;
+                }
+            }
+        }
+    }
+}

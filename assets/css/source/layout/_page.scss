@@ -1,0 +1,34 @@
+.content-left { 
+    
+    .entry-header {
+        
+        color: $color-link-grey;                    
+        border-left: solid 5px;        
+        border-bottom: solid 1px;
+        font-weight:bold;
+        
+        .entry-title {
+            font-weight:bold;
+            color: $color-link;            
+        }
+        a{
+            color:$color-link;
+        }
+    }
+    .entry-content {        
+        h2 {
+            color:#969696;
+        }
+    }
+    ul {
+        margin: 20px 0px;
+        padding: 0 0 0 25px;
+        list-style-type: square;
+        li {
+            padding: 5px 0px 0;
+            a {
+                color:$color-link;
+            }
+        }
+    }
+}
