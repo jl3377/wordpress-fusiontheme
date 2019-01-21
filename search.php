@@ -16,25 +16,30 @@ get_header(); ?>
 
 			<?php
 			/* Start the Loop */
-                        $i=0;
+            $i=1;
 			while ( have_posts() ) : the_post();
 
-                            // 2 columnas
-                            if ($i%2 ==0) { ?><div class="row"><?php } ?>                            
-                                <div class="col-12 col-md-6"><?php
-                                  
+               // 2 columnas
+			   if ($i%2 !=0) { ?><div class="row"><?php } ?>                            
+			   <div class="col-12 col-md-6"><?php
+					   
 				/**
 				 * Run the loop for the search to output the results.
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', '' );
+				get_template_part( 'template-parts/content', '' ); ?>
                                 
-                               ?></div><?php    
-                            if ($i%2 !=0 || $wp_query->post_count == 1) { ?></div><?php }                             
-                            $i++;
+                </div><?php    
+				
+				if ($i%2 ==0 || $wp_query->post_count == 1) { ?></div><?php }                             
+                $i++;
 
 			endwhile;
+
+			// total = impar posts	
+			if ($wp_query->post_count%2 !=0 && $wp_query->post_count != 1) { ?></div><?php } 	
+
 
 			/**
              * fusion_post_navigation hook

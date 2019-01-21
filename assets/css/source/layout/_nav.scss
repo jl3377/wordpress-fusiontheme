@@ -33,11 +33,15 @@
                 margin: 10px 0 0 0;
             }
             .menu-item  {
+
                 @include media-query(responsive){
                     font-size: 1.2rem;
                     margin-left: 15px;
                     padding: 10px 0px;
                     border-top: solid #484c50 1px;
+                }
+                .fa-magento {
+                    color: $color-link-grey;
                 }
             }    
         }

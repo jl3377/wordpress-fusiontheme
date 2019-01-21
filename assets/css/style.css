@@ -1661,6 +1661,10 @@ div.breadcrumbs {
   }
 }
 
+.navbar #navbarCollapse #main-menu .menu-item .fa-magento {
+  color: #d8dadc;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar #navbarCollapse #social {
     -webkit-box-orient: horizontal;
@@ -1726,7 +1730,7 @@ div.breadcrumbs {
 }
 
 #content .content-left .post-navigation .nav-links .nav-previous {
-  border-right: solid #eee 5px;
+  margin-right: 5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1735,6 +1739,9 @@ div.breadcrumbs {
 
 #content .content-left .related-pots-block {
   border-top: solid #eee 1px;
+  margin-top: 15px;
+  clear: both;
+  padding: 30px 15px;
 }
 
 #content .content-left .related-pots-block .widget-title {
@@ -1775,11 +1782,6 @@ div.breadcrumbs {
   color: #1ab697;
 }
 
-#content .related-pots-block {
-  padding: 30px 15px;
-  clear: both;
-}
-
 .box {
   padding: 10px;
 }
@@ -1811,7 +1813,7 @@ div.breadcrumbs {
 }
 
 .box .post .entry-content a {
-  color: #d8dadc;
+  color: #1ab697;
 }
 
 .box .post .entry-content ul {
@@ -1946,7 +1948,7 @@ div.breadcrumbs {
 }
 
 .widget-area .widget_search {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .widget-area .widget_search .search-form {
@@ -2046,18 +2048,18 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
