@@ -9,13 +9,15 @@
         
         .entry-title {
             font-weight:bold;
-            color: $color-link;            
+            color: $color-link;   
+            padding: 0 0 0 15px;         
         }
         a{
             color:$color-link;
         }
     }
-    .entry-content {        
+    .entry-content {       
+        margin-top: 25px; 
         h2 {
             color:#969696;
         }

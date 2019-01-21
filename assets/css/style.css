@@ -1895,10 +1895,15 @@ div.breadcrumbs {
 .content-left .entry-header .entry-title {
   font-weight: bold;
   color: #1ab697;
+  padding: 0 0 0 15px;
 }
 
 .content-left .entry-header a {
   color: #1ab697;
+}
+
+.content-left .entry-content {
+  margin-top: 25px;
 }
 
 .content-left .entry-content h2 {
