@@ -1885,6 +1885,10 @@ div.breadcrumbs {
   font-size: 0.9rem;
 }
 
+.contenedor-pagina .entry-content {
+  margin-top: 25px;
+}
+
 .content-left .entry-header {
   color: #d8dadc;
   border-left: solid 5px;
@@ -1900,10 +1904,6 @@ div.breadcrumbs {
 
 .content-left .entry-header a {
   color: #1ab697;
-}
-
-.content-left .entry-content {
-  margin-top: 25px;
 }
 
 .content-left .entry-content h2 {
