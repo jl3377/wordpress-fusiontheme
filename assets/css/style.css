@@ -11,7 +11,7 @@ Text Domain: gist
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, blog
 */
 /* Add Custom CSS after this line */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -1802,6 +1802,7 @@ div.breadcrumbs {
 
 .box .post .entry-header h1.entry-title {
   color: #1ab697;
+  font-size: 1.6rem;
 }
 
 .box .post .entry-content {
@@ -2040,7 +2041,7 @@ div.breadcrumbs {
  * Globals
  */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #656565;
 }
 
