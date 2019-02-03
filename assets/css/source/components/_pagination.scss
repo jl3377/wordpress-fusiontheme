@@ -1,6 +1,14 @@
 /*---------------------------------------------------
 *   Pagination
 *   ----------------------------------------------------- */
+
+.navigation {
+    padding:25px 0px;
+    .screen-reader-text {
+        display:none;        
+    }
+}
+
 .posts-navigation, .site-main
 .post-navigation {
     margin: 0 0 1.5em;

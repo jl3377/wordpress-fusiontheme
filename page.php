@@ -3,7 +3,7 @@
 get_header(); ?>
 
         <div class="row contenedor-pagina">
-            <div class="col-12 col-md-8 content-left">
+            <div class="col-12 col-md-8 content-left index">
 			
 			<?php
 			while ( have_posts() ) : the_post();
