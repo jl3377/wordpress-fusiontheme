@@ -3,7 +3,7 @@
 get_header(); ?>
 
 	<div class="row contenedor">
-            <div class="col-12 col-md-8 content-left">	
+            <div class="col-12 col-md-8 content-left index">	
 		<?php
 		if ( have_posts() ) : ?>
 

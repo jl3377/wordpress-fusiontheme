@@ -5,22 +5,29 @@ body {
 #content {
     
     padding-bottom: 20px;
-    padding-top: 70px;
-    @include media-query(md) {
-        padding-top:50px;
-    }
     
-    .content {
-        margin-top:40px;
-    }
+    /*@include media-query(md) {
+        padding-top:50px;
+    }*/
+
     .indice {
         margin-top:25px;
     }
-    .content-left {
-        margin-top: 40px;
+    .index {
+        margin-top: 95px;
+
+        @include media-query(sm) {
+            margin-top:120px;
+        }     
+
         @include media-query(md) {
-            margin-top:25px;
+            margin-top:70px;
         }
+
+    }
+    .content-left {
+        
+       
         .page-header {
             .page-title {
                 color: $color-link;

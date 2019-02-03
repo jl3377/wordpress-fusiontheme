@@ -25,7 +25,7 @@ global $fusion_theme_options;
             </div>
             <div class="col-md-10 fpost">
             <?php } else {  ?>
-            <div class="col-md-12 fpost">
+            <div class="col-md-12 fpostsingle">
             <?php } ?>       
 
                 <header class="entry-header">

@@ -1,5 +1,9 @@
 .article {
 
+    .post  {
+        margin-top:10px;       
+    }
+
     .fimage {
         text-align: center;
         @include media-query(md) {
@@ -7,12 +11,28 @@
         }
         img {
             object-fit: contain; 
-            width: 75px;
+            width: 100%;
             height: auto;      
         }    
     }
 
-    .fpost {
+    .fpostsingle {
+        border-bottom: solid 2px hsl(0, 0%, 93%);
+        border-left: solid 1px hsl(0, 0%, 93%);
+        padding: 95px 30px 25px !important;
+
+        @include media-query(md)  {
+            padding: 40px 30px 25px !important;
+        }
+
+    }
+
+    .fpost, 
+    .fpostsingle {
+        border-bottom: solid 2px hsl(0, 0%, 93%);
+        border-left: solid 1px hsl(0, 0%, 93%);      
+        
+
         .entry-header {
             h1 {
                 color: $links-color;
@@ -21,6 +41,7 @@
                 color: $links-color;
                 a {
                     color: $links-color;
+                    color: #8a8a8a;
                 }
             }
         }
@@ -38,6 +59,10 @@
             p {
                 font-size: $font-size-base;
                 color: $color-dark-grey;
+            }
+            img {
+                width:100%;
+                height:auto;
             }
         }
     }

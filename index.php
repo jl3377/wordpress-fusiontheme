@@ -17,6 +17,7 @@ get_header(); ?>
 			endif;
 
 			/* Start the Loop */
+			$i=1;
 			while ( have_posts() ) : the_post();
 
 				/*
@@ -26,10 +27,11 @@ get_header(); ?>
 				 */
 				get_template_part( 'template-parts/content', get_post_format() );
 			
-                /*if ($i==10) { ?>
+                if ($i==10) { ?>
                 <div class="col-12" style="margin:10px 0 35px ">
                 <?php get_template_part( 'template-parts/adsense/inarticle', 'none' ); ?>
-                </div><?php }*/
+				</div><?php }
+				$i++;
                             
 			endwhile;
 
