@@ -421,7 +421,7 @@ body {
 }
 
 .article .post {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .article .fimage {
@@ -506,7 +506,7 @@ body {
 .widget {
   height: auto;
   overflow: hidden;
-  margin: 0 0px 50px;
+  margin: 0 0px 25px;
   padding: 0px 0 0 20px;
 }
 
