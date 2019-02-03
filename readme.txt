@@ -1,8 +1,12 @@
-Fusion
---------
-Contributors: artegrafico.net
+# Fusion - WordPress Theme 
+Made with Html, Css+Sass and jQuery
 
-Requires at least: WordPress 5.0
-Tested up to: WordPress 5.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* [Web](https://www.artegrafico.net "José Luis Rojo Sánchez")
+* [Email](mailto:jose@artegrafico.net "jose@artegrafico.net")
+
+# DEVELOPMENT
+* Responsive WordPress Theme
+
+# Responsive
+![Responsive](https://raw.githubusercontent.com/jl3377/sass-menus/master/assets/img/responsive.png?token=AWeSaJYnTU1knsmkhY19BI5iIx-WDEgaks5cTgi0wA%3D%3D "responsive menu")
+   
