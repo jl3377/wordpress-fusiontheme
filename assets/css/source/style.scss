@@ -15,32 +15,17 @@
 
 // Components
 @import 'components/headings';
-
+@import 'components/search';
+@import 'components/pagination';
+ 
 // pages & layout
-//@import 'layout/nav';
-@import 'layout/all';
 @import 'layout/nav';
 @import 'layout/sidebar';
 @import 'layout/content';
 @import 'layout/page';
+@import 'layout/article';
 @import 'layout/widgets';
 @import 'layout/forms';
 @import 'layout/error';
-@import 'layout/media';
+@import 'layout/404';
 @import 'layout/footer';
-
-/*
- * Globals
- */
-
-body {
-    font-family: $font-default;    
-    color: $color-theme;
-}
-
-h1 { font-size: 2.4rem; }
-h2 { font-size: 1.6rem; }
-h3 { font-size: 1.2rem; }
-h4 { font-size: 1.2rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1.2rem; }

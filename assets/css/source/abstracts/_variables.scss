@@ -10,18 +10,23 @@ $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
 // fonts default
-$font-default: 'Open Sans', sans-serif;
+//$font-default: 'Open Sans', sans-serif;
+$font-default: 'Roboto', sans-serif;
 
 // colors
 $color-default: hsl(0, 0%, 0%);
-$color-links: hsl(44, 146%, 141%);
+$links-color: hsl(168, 75%, 41%);
+
+// text colors
+$color-grey: hsl(0, 2%, 75%);
+$color-dark-grey: hsl(0, 0%, 47%);
 
 // space
 $spacer: 1rem !default;
 
 // headings sizes
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.45 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;

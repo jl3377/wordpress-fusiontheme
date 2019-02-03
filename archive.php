@@ -17,31 +17,18 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
-			/* Start the Loop */
-			$i=1;
-                        
+
+			/* Start the Loop */	                    
 			while ( have_posts() ) : the_post();
 
-                // 2 columnas
-                if ($i%2 !=0) { ?><div class="row"><?php } ?>                            
-                <div class="col-12 col-md-6"><?php
-                        
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() ); ?>
+				get_template_part( 'template-parts/content', get_post_format() ); 
 			
-				</div><?php    
-				
-				if ($i%2 ==0 || $wp_query->post_count == 1) { ?></div><?php }                             
-                $i++;
-
 			endwhile;
-
-			// total = impar posts	
-			if ($wp_query->post_count%2 !=0 && $wp_query->post_count != 1) { ?></div><?php } 	
 
 			/**
              * fusion_post_navigation hook

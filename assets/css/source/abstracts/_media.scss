@@ -17,7 +17,7 @@ $orientations: (
     // check if the key exist into the map
     @if(map-has-key($breakpoints, $breakpoint)) {
         $value: map-get($breakpoints, $breakpoint);
-        @media (max-width: $value){
+        @media screen and (max-width: $value){
             @content;        
         }
     }

@@ -1,0 +1,52 @@
+/*---------------------------------------------------
+*   Pagination
+*   ----------------------------------------------------- */
+.posts-navigation, .site-main
+.post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}    
+
+
+.nav-links .nav-previous a::before, .nav-links .nav-next a::after {
+    font-family: FontAwesome;
+}
+
+.nav-links a {
+    background: #3a7a55;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.nav-links a,
+.nav-links a:visited,
+.nav-links a:focus{
+    color: #fff;
+}
+.nav-links a:hover {
+    background: #555;
+}
+.nav-links .nav-previous a::before {
+    left: 10px;
+    content: "\f100";
+    margin-right: 5px;
+}
+
+.nav-links .nav-next a::after {
+    margin-left: 5px;
+    content: "\f101";
+}

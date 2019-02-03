@@ -64,6 +64,7 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
 	function fusion_posted_on() {
+
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -82,7 +83,7 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
         );*/
         $posted_on = sprintf(
             '%s',
-            '<i class="fas fa-calendar-alt"></i>' . $time_string
+            '' . $time_string
         );
 
         /*$byline = sprintf(
@@ -91,11 +92,13 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
         );*/
         $byline = sprintf(
             '%s',
-            '<span class="author vcard"><i class="fas fa-user"></i>' . esc_html( get_the_author() ) . '</span>'
+            '<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
         );
 
-		echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-            //echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+		echo '<span class="byline"> ' . $byline . '</span> - '; 
+		echo '<span class="posted-on">' . $posted_on . '</span>';
+		
+        
 
 	}
 endif;

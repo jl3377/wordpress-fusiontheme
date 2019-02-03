@@ -1,0 +1,24 @@
+/*---------------------------------------------------
+*   404 Page and Search Result Empty
+*   ----------------------------------------------------- */
+.error404 #primary{
+    margin: 0 auto;
+    float: none;
+}
+.error-404,
+.no-results{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.error-404 h1,
+.no-results h1{
+    color: #4ea371;
+    font-size: 100px;
+    line-height: 120px;
+}
+.error-404 p,
+.no-results p{
+    font-size: 32px;
+    line-height: 40px;
+}

@@ -1085,34 +1085,6 @@ footer.site-footer a {
     margin-bottom: 30px;
 }
 
-.nav-links .nav-previous a::before, .nav-links .nav-next a::after {
-    font-family: FontAwesome;
-}
-
-.nav-links a {
-    background: #3a7a55;
-    display: inline-block;
-    padding: 10px 20px;
-}
-.nav-links a,
-.nav-links a:visited,
-.nav-links a:focus{
-    color: #fff;
-}
-.nav-links a:hover {
-    background: #555;
-}
-.nav-links .nav-previous a::before {
-    left: 10px;
-    content: "\f100";
-    margin-right: 5px;
-}
-
-.nav-links .nav-next a::after {
-    margin-left: 5px;
-    content: "\f101";
-}
-
 /*--------------------------------------------------------------
 ## Featured Image
 --------------------------------------------------------------*/
@@ -1503,30 +1475,7 @@ div.breadcrumbs{
     padding: 1px 10px 1px 10px;
     color: #fff;
 }
-/*---------------------------------------------------
-*   404 Page and Search Result Empty
-*   ----------------------------------------------------- */
-.error404 #primary{
-    margin: 0 auto;
-    float: none;
-}
-.error-404,
-.no-results{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-}
-.error-404 h1,
-.no-results h1{
-    color: #4ea371;
-    font-size: 100px;
-    line-height: 120px;
-}
-.error-404 p,
-.no-results p{
-    font-size: 32px;
-    line-height: 40px;
-}
+
 /*---------------------------------------------------
 *   Pagination
 *   ----------------------------------------------------- */

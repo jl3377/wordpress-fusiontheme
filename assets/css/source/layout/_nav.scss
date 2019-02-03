@@ -1,9 +1,16 @@
 .navbar {
     
     background-color: rgb(40,40,41); 
-    @include media-query(lg) {
-        height:75px!important;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    height:75px;
+
+    @include media-query(md) {
+        height:auto;
     }
+
+    
     
     .navbar-brand {    
         .title {

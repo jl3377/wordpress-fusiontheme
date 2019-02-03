@@ -30,6 +30,10 @@
         margin-top:40px;    
         .search-form {
             position: relative;
+
+            .screen-reader-text {
+                display: none;
+            }
         }
 
         .search-form input.search-field {
@@ -40,7 +44,7 @@
         }
 
         .search-form input[type=submit] {
-            position: absolute;
+            //position: absolute;
             top: 0px;
             right: 0px;
             margin: 0px;
@@ -48,7 +52,7 @@
             border: 0px;
             color: #fff;
             background: #4ea371;
-            line-height: 28px;
+            line-height: 34px;
             font-weight: 700;
             text-transform: uppercase;
             text-align: left;

@@ -22,8 +22,6 @@ global $fusion_theme_options; ?>
 
     <div id="page" class="site container-main">
     
-        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'fusion'); ?></a>
-    
         <!-- nav menu -->
         <?php get_template_part( 'template-parts/header/nav', ''); ?>
 
