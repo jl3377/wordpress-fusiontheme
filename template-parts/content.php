@@ -48,7 +48,11 @@ global $fusion_theme_options;
                 endif;         */   
 
                 if (('post' === get_post_type()) && ( $fusion_theme_options['fusion-blog-meta-options'] == 1)) : ?>
+                    <?php if (is_singular()) { ?>
+                    <div class="entry-meta-single">
+                     <?php } else { ?> 
                     <div class="entry-meta">
+                    <?php } ?>    
                         <?php fusion_posted_on(); ?>
                     </div><!-- .entry-meta -->
                 <?php
