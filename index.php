@@ -20,8 +20,8 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 
                             // 2 columnas
-                            if ($i%2 ==0) { ?><div class="row"><?php } ?>                            
-                                <div class="col-12 col-md-6"><?php
+                            /*if ($i%2 ==0) { ?><div class="row"><?php } ?>                            
+                                <div class="col-12 col-md-6"><?php*/
                                 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -29,14 +29,15 @@ get_header(); ?>
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
 				get_template_part( 'template-parts/content', get_post_format() );
-                                ?></div><?php    
-                                if ($i%2 !=0) { ?></div><?php }
-                            $i++;
+			
+				/*?></div><?php    
+                if ($i%2 !=0) { ?></div><?php }
+                $i++;*/
                             
-                            if ($i==10) { ?>
-                            <div class="col-12" style="margin:10px 0 35px ">
-                                <?php get_template_part( 'template-parts/adsense/inarticle', 'none' ); ?>
-                            </div><?php }
+                /*if ($i==10) { ?>
+                <div class="col-12" style="margin:10px 0 35px ">
+                <?php get_template_part( 'template-parts/adsense/inarticle', 'none' ); ?>
+                </div><?php }*/
                             
 			endwhile;
 
