@@ -20,6 +20,13 @@
 .post-navigation .nav-previous {
     float: left;
     width: 50%;
+
+    float: left;
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex: 1;
+    border-right: solid #eee 1px;
 }
 
 .comment-navigation .nav-next,
@@ -28,6 +35,13 @@
     float: right;
     text-align: right;
     width: 50%;
+
+    float: left;
+    text-align: right;
+    width: 50%;
+    display: flex;
+    flex: 1;
+ 
 }    
 
 
@@ -37,7 +51,11 @@
 
 .nav-links a {
     background: #3a7a55;
-    display: inline-block;
+    display: inline-block;    
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
 }
 .nav-links a,
@@ -50,11 +68,12 @@
 }
 .nav-links .nav-previous a::before {
     left: 10px;
-    content: "\f100";
+    content: "\25C0";
     margin-right: 5px;
+    
 }
 
 .nav-links .nav-next a::after {
     margin-left: 5px;
-    content: "\f101";
+    content: "\25BA";
 }

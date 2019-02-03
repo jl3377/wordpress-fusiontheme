@@ -28,7 +28,7 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', get_post_format() );
 			
                 if ($i==10) { ?>
-                <div class="col-12" style="margin:10px 0 35px ">
+                <div class="col-12 adsbygoogle" style="margin: 25px 0px">
                 <?php get_template_part( 'template-parts/adsense/inarticle', 'none' ); ?>
 				</div><?php }
 				$i++;
