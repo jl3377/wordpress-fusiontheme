@@ -1,17 +1,39 @@
-/*
-Theme Name: Gist
-Theme URI: https://www.candidthemes.com/themes/gist-clean-minimal-wordpress-blog-theme/
-Author: candidthemes
-Author URI: http://www.candidthemes.com/
-Description: Gist is best ever crafted free WordPress theme for Blog, news and Magazine. Gist is a simple, easy to use, modern and creative, user friendly WordPress theme with typography, fonts and color options. In addition Gist is responsive, cross browser compatible and child theme ready. Gist comes with added custom widgets for social, recent post and author, sticky sidebar options, footer widget, sidebar options, meta option, copyright option, social options etc. 
-Version: 1.0.6
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: gist
-Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, blog
-*/
-/* Add Custom CSS after this line */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+/*------------------------------------------------*\
+ # HEADINGS
+\*------------------------------------------------*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: black;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -1624,7 +1646,7 @@ div.breadcrumbs {
   background-color: #282829;
 }
 
-@media only screen and (min-width: 769px) {
+@media (max-width: 1200px) {
   .navbar {
     height: 75px !important;
   }
@@ -1646,13 +1668,13 @@ div.breadcrumbs {
   color: #1ab697;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar #navbarCollapse #main-menu {
     margin: 10px 0 0 0;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar #navbarCollapse #main-menu .menu-item {
     font-size: 1.2rem;
     margin-left: 15px;
@@ -1665,7 +1687,7 @@ div.breadcrumbs {
   color: #d8dadc;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar #navbarCollapse #social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1675,7 +1697,7 @@ div.breadcrumbs {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar #navbarCollapse #social .nav-item {
     padding: 10px 0 0 20px;
   }
@@ -1686,7 +1708,7 @@ div.breadcrumbs {
   color: #c6c6c6;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar #navbarCollapse #social .sozialize {
     padding: 18px 0px 0 15px;
   }
@@ -2012,9 +2034,157 @@ div.breadcrumbs {
   padding: 5px 0px 0;
 }
 
-.sidebar {
-  border-left: solid #eee 1px;
-  background: #fdfdfd;
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+select {
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+}
+
+.error404 #primary {
+  margin: 0 auto;
+  float: none;
+}
+
+.error404 .no-results {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.error404 h1 {
+  color: #4ea371;
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.error404 p {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
 }
 
 #footer {

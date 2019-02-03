@@ -1,0 +1,28 @@
+// breakpoints media queries
+$breakpoints: (
+    'xs': 576px,
+    'sm': 768px,
+    'md': 992px,
+    'lg': 1200px
+);
+
+$orientations: (
+    'portrait': portrait,
+    'landscape': landscape
+);
+
+// mixim media queries
+@mixin media-query($breakpoint) {
+    
+    // check if the key exist into the map
+    @if(map-has-key($breakpoints, $breakpoint)) {
+        $value: map-get($breakpoints, $breakpoint);
+        @media (max-width: $value){
+            @content;        
+        }
+    }
+
+    @warn "Cant find `#{$breakpoint}` in $breakpoints";
+}
+
+

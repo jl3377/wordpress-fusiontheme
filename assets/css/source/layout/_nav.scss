@@ -1,14 +1,11 @@
 .navbar {
     
     background-color: rgb(40,40,41); 
-    @include media-query(desktop) {
+    @include media-query(lg) {
         height:75px!important;
     }
     
     .navbar-brand {    
-        img {             
-            //padding: 5px 0px 0px;
-        }
         .title {
             padding: 0px 10px;
             span {
@@ -29,12 +26,12 @@
     
     #navbarCollapse {
         #main-menu {
-            @include media-query(responsive){
+            @include media-query(md){
                 margin: 10px 0 0 0;
             }
             .menu-item  {
 
-                @include media-query(responsive){
+                @include media-query(md){
                     font-size: 1.2rem;
                     margin-left: 15px;
                     padding: 10px 0px;
@@ -46,18 +43,18 @@
             }    
         }
         #social {
-            @include media-query(responsive) {
+            @include media-query(md) {
                 flex-direction: row;
             }    
             .nav-item {
-                @include media-query(responsive) {                
+                @include media-query(md) {                
                     padding: 10px 0 0 20px
                 }        
             }    
             .sozialize {
                 padding: 9px 12px 0 0;
                 color: #c6c6c6;
-                @include media-query(responsive) {
+                @include media-query(md) {
                     padding:18px 0px 0 15px;
                 }
             }

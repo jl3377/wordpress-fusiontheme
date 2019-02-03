@@ -1,0 +1,12 @@
+$colors: (
+    blue: hsl(219, 92%, 42%),
+    red: hsl(355, 92%, 42%),
+    yellow: hsl(66, 93%, 44%)
+);
+
+@function set-color($color) {  
+    @return map-get($colors, $color);                 
+}
+
+
+$base-color: rgb(0,0,0);
