@@ -477,13 +477,20 @@ body {
 
 .article .fpost .entry-info,
 .article .fpostsingle .entry-info {
-  color: #c1bebe;
+  color: #bfbfbf;
   font-size: 0.8rem;
 }
 
 .article .fpost .entry-info .entry-meta .author,
 .article .fpostsingle .entry-info .entry-meta .author {
   color: #838181;
+}
+
+.article .fpost .entry-info .entry-meta-single,
+.article .fpostsingle .entry-info .entry-meta-single {
+  border-bottom: solid #eee 1px;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .article .fpost .entry-content,

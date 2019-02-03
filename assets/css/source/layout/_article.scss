@@ -46,13 +46,18 @@
             }
         }
         .entry-info {
-            color: $color-grey;
+            color: $color-silver;
             font-size: 0.8rem;
-            .entry-meta {
+            .entry-meta {                
                 .author {
                     color: hsl(0, 1%, 51%);
                 }
             }
+            .entry-meta-single {
+                border-bottom: solid #eee 1px;
+                padding-bottom: 10px;
+                margin-bottom: 24px;
+            }    
         }
         .entry-content {
             margin: 10px 0px;
