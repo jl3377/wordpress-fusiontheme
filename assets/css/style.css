@@ -564,6 +564,13 @@ body {
   height: auto;
 }
 
+.article .fpost .entry-content img.default-size-right,
+.article .fpostsingle .entry-content img.default-size-right {
+  width: auto;
+  float: right;
+  margin: 10px;
+}
+
 .article .fpost .entry-content a,
 .article .fpostsingle .entry-content a {
   color: #1ab798;

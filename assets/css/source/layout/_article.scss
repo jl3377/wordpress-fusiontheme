@@ -81,6 +81,12 @@
             img {
                 width:100%;
                 height:auto;
+                &.default-size-right {
+                    width:auto;
+                    float:right;
+                    margin:10px;
+                }
+               
             }
 
             a{
