@@ -52,6 +52,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://www.facebook.com/joseluis.rojo.7399" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://jsfiddle.net/user/dashboard/fiddles/" target="_blank" title="Facebook"><i class="fab fa-jsfiddle"></i></a>
+            </li>            
             
         </ul>
     </div>

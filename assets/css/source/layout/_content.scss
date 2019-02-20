@@ -62,6 +62,12 @@ body {
                     img {
                         height: 120px;
                         width: auto;
+                        @include media-query(md) {
+                            margin-right: 25px;
+                            float: left;
+                            height: 75px;
+                            margin: 10px 25px 0 0;
+                        }
                         
                     }
 

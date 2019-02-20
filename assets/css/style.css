@@ -159,6 +159,12 @@ h6, .h6 {
   padding: 0 0 0 10px;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar .navbar-brand .title span {
+    font-size: 1rem;
+  }
+}
+
 .navbar #main-menu .menu-item {
   margin: 0px 30px 0 0;
 }
@@ -289,6 +295,15 @@ body {
 #content .content-left .related-pots-block .related-post-entries .widget-image img {
   height: 120px;
   width: auto;
+}
+
+@media screen and (max-width: 992px) {
+  #content .content-left .related-pots-block .related-post-entries .widget-image img {
+    margin-right: 25px;
+    float: left;
+    height: 75px;
+    margin: 10px 25px 0 0;
+  }
 }
 
 #content .content-left .related-pots-block .related-post-entries .featured-desc {

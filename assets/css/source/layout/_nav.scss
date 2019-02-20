@@ -17,6 +17,9 @@
             padding: 0px 10px;
             span {
                padding: 0 0 0 10px;
+               @include media-query(md) {
+                   font-size:1rem;
+               }
             }
         }
     }
