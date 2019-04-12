@@ -40,12 +40,13 @@ global $fusion_theme_options;
                 <!-- start entry meta -->
                 <div class="entry-info">
                 <?php
-                /*if (('post' === get_post_type()) && ( $fusion_theme_options['fusion-blog-meta-options'] == 1)) : ?>
+                //if (('post' === get_post_type()) && ( $fusion_theme_options['fusion-blog-meta-options'] == 1)) : ?>
+                 <?php /* if (is_singular()) : ?>
                     <div class="entry-meta entry-category">
                         <?php fusion_entry_category(); ?>
                     </div><!-- .entry-meta -->
                 <?php
-                endif;         */   
+                endif;       */     
 
                 if (('post' === get_post_type()) && ( $fusion_theme_options['fusion-blog-meta-options'] == 1)) : ?>
                     <?php if (is_singular()) { ?>
@@ -54,11 +55,12 @@ global $fusion_theme_options;
                     <div class="entry-meta">
                     <?php } ?>    
                         <?php fusion_posted_on(); ?>
+                        <?php //fusion_entry_category(); ?>
                     </div><!-- .entry-meta -->
                 <?php
                 endif;            
 
-                //fusion_entry_footer(); // edit links
+                
                 ?>
                 </div> <!-- .entry-metas -->                      
                 
@@ -75,6 +77,8 @@ global $fusion_theme_options;
                         the_content();
                     }
                 endif;
+
+                fusion_entry_footer(); // edit links
 
                 wp_link_pages(array(
                     'before' => '<div class="page-links">' . esc_html__('Pages:', 'fusion'),
