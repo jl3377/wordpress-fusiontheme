@@ -5,11 +5,9 @@
 .gitattributes export-ignore
 
 Thumbs.db export-ignore
-project.tar.gz export-ignore
 
 # Directories
-_docs export-ignore
-_scripts export-ignore
+.vscode/* export-ignore
 
 # General text files
 *README.md export-ignore
