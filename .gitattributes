@@ -4,13 +4,12 @@
 .gitignore export-ignore
 .gitattributes export-ignore
 
-Thumbs.db export-ignore
-
 # Directories
 .vscode export-ignore
 
-# General text files
+# other files
 *README.md export-ignore
 *LICENSE.md export-ignore
 COPYRIGHT.md export-ignore
 CHANGELOG.md export-ignore
+Thumbs.db export-ignore
