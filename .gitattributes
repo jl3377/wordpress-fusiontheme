@@ -7,7 +7,7 @@
 Thumbs.db export-ignore
 
 # Directories
-.vscode/* export-ignore
+.vscode export-ignore
 
 # General text files
 *README.md export-ignore
