@@ -14,7 +14,7 @@ if ( !function_exists('fusion_default_theme_options') ) {
             //'fusion-font-line-height'=> 2,
             //'fusion-letter-spacing'=> 0,
             'fusion-blog-excerpt-options'=> 'excerpt', // descripcion corta en post
-            'fusion-blog-excerpt-length'=> 25, // numero de palabras 
+            'fusion-blog-excerpt-length'=> 50, // numero de palabras 
             'fusion-blog-featured-image'=> 'full-image',
             'fusion-blog-meta-options'=> 1, // activacion de metas en post (categorias, fechas, ...) 
             'fusion-blog-read-more-text' => esc_html__('Read More','fusion'),

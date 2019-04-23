@@ -27,13 +27,12 @@ body {
     }
     .content-left {
         
-       
         .page-header {
             .page-title {
-                color: $color-link;
-                border-left: $color-link-grey solid 11px;
+                color: $color-links;
+                border-left: $color-links solid 11px;
                 padding: 0 0px 10px 15px;
-                border-bottom: $color-link-grey solid 1px; 
+                border-bottom: $color-links solid 1px; 
             }
         }
         .post-navigation {
@@ -54,7 +53,7 @@ body {
             clear: both;
             padding: 30px 15px;        
             .widget-title {
-                color: $color-link; 
+                color: $color-links; 
                 font-size: 2rem;
             }
             .related-post-entries {
@@ -75,7 +74,7 @@ body {
                 .featured-desc {
                     margin: 17px 0px 0px;
                     h2 {
-                        color: $color-link;
+                        color: $color-links;
                         font-size:1.1rem;
                     }    
                 }
@@ -84,7 +83,7 @@ body {
         }
         .comments-area {
             a {
-                color: $color-link;
+                color: $color-links;
             }
         }
         
@@ -95,12 +94,12 @@ body {
     .page-header{
         margin-bottom:25px;
         .page-title {
-            color: $color-link-grey;
-            border-left:$color-link-grey solid 11px;
+            color: $color-links;
+            border-left:$color-links solid 11px;
             padding: 0 0px 10px 15px;
-            border-bottom: $color-link-grey solid 1px;
+            border-bottom: $color-links solid 1px;
             span {
-                color:$color-link;
+                color:$color-links;
             }
         }
     }

@@ -170,7 +170,7 @@ h6, .h6 {
 }
 
 .navbar #main-menu .menu-item a {
-  color: #1ab697;
+  color: #1ab798;
 }
 
 @media screen and (max-width: 992px) {
@@ -189,7 +189,7 @@ h6, .h6 {
 }
 
 .navbar #navbarCollapse #main-menu .menu-item .fa-magento {
-  color: #d8dadc;
+  color: #1ab798;
 }
 
 @media screen and (max-width: 992px) {
@@ -257,10 +257,10 @@ body {
 }
 
 #content .content-left .page-header .page-title {
-  color: #1ab697;
-  border-left: #d8dadc solid 11px;
+  color: #1ab798;
+  border-left: #1ab798 solid 11px;
   padding: 0 0px 10px 15px;
-  border-bottom: #d8dadc solid 1px;
+  border-bottom: #1ab798 solid 1px;
 }
 
 #content .content-left .post-navigation .nav-links {
@@ -288,7 +288,7 @@ body {
 }
 
 #content .content-left .related-pots-block .widget-title {
-  color: #1ab697;
+  color: #1ab798;
   font-size: 2rem;
 }
 
@@ -311,12 +311,12 @@ body {
 }
 
 #content .content-left .related-pots-block .related-post-entries .featured-desc h2 {
-  color: #1ab697;
+  color: #1ab798;
   font-size: 1.1rem;
 }
 
 #content .content-left .comments-area a {
-  color: #1ab697;
+  color: #1ab798;
 }
 
 #content .page-header {
@@ -324,14 +324,14 @@ body {
 }
 
 #content .page-header .page-title {
-  color: #d8dadc;
-  border-left: #d8dadc solid 11px;
+  color: #1ab798;
+  border-left: #1ab798 solid 11px;
   padding: 0 0px 10px 15px;
-  border-bottom: #d8dadc solid 1px;
+  border-bottom: #1ab798 solid 1px;
 }
 
 #content .page-header .page-title span {
-  color: #1ab697;
+  color: #1ab798;
 }
 
 .contenedor-pagina .entry-content {
@@ -374,7 +374,7 @@ body {
 }
 
 .content-left ul li a {
-  color: #1ab697;
+  color: #1ab798;
 }
 
 .article .post {
@@ -460,18 +460,37 @@ body {
   color: #787878;
 }
 
+.article .fpost .entry-content p:first-child,
+.article .fpostsingle .entry-content p:first-child {
+  background-color: #efefef;
+  color: #6f6f6f;
+  padding: 15px;
+  border-left: solid #aaa 5px;
+}
+
 .article .fpost .entry-content h2,
 .article .fpostsingle .entry-content h2 {
   color: #1ab798;
   margin: 30px 0px;
   border-bottom: solid 1px #ededed;
   padding-bottom: 10px;
+  border-bottom: solid 1px #ededed;
+  padding-bottom: 10px;
+  background: #efefef;
+  padding: 10px;
+  border-left: solid #1ab798 5px;
 }
 
 .article .fpost .entry-content h3,
 .article .fpostsingle .entry-content h3 {
   color: #1ab798;
   margin: 30px 0px;
+  border-bottom: solid 1px #eee;
+  background: #f9f9f9;
+  border-left: solid 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #464646;
 }
 
 .article .fpost .entry-content p,
@@ -530,7 +549,7 @@ body {
 }
 
 .widget ul li a {
-  color: #1ab697;
+  color: #1ab798;
   text-transform: capitalize;
 }
 
@@ -588,7 +607,7 @@ body {
 .widget-area .widget_tag_cloud .tagcloud .tag-cloud-link {
   background: #eee;
   padding: 0px 10px;
-  color: #1ab697;
+  color: #1ab798;
 }
 
 .widget-area .widget_recent_comments .recentcomments {

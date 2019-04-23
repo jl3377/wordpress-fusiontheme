@@ -13,7 +13,7 @@
             color: #949494;
             padding: 0 0 0 0px;
             a {
-                color:$color-link;
+                color:$color-links;
                 text-transform: capitalize;
             }
             &:before {
@@ -78,7 +78,7 @@
             .tag-cloud-link {
                 background: #eee;
                 padding: 0px 10px;
-                color:$color-link;
+                color:$color-links;
             }
         }
     }
