@@ -1,0 +1,94 @@
+.article {
+    .imagen {
+        display: inline-block;
+        width: auto;
+        margin: 25px;
+    }
+
+    .imagen img {
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    .modalImg {
+        cursor: pointer;
+        border-radius: 0.4rem;
+        //max-width: 100px;
+    }
+
+    .imodalImg:hover {
+        opacity: 0.8;
+    }
+
+    .modal {
+        display: none;
+        /* ocultar por defecto */
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 99999!important;
+        top: 0;
+        left: 0;
+        border: solid 1px;
+        background: rgba(0, 0, 0, 0.9);
+        padding-top: 5%;
+        overflow: hidden;
+
+        
+        #modalImg {
+            display: block;
+            position: fixed;
+            width: 70%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* center to window */
+        }
+
+    }
+
+
+
+    #modalClose {
+        position: absolute;
+        cursor: pointer;
+        top: 30px;
+        right: 50px;
+        color: #fff;
+        transition: all;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+
+    #modalText {
+        margin: auto;
+        display: block;
+        text-align: center;
+        color: #ccc;
+    }
+
+    figcaption {
+        font-style: oblique;
+    }
+
+    /* animaciones */
+    #modalText {
+        animation-name: zoom;
+        animation-duration: 0.5s;
+    }
+
+    /*#modalImg {  
+animation-name: zoom;
+animation-duration: 0.5s;
+} */
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+}
