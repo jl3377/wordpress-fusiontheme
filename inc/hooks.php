@@ -136,7 +136,7 @@ if ( !function_exists('fusion_related_post') ) :
             if($count > 1 ){ ?>
             <div class="related-pots-block">
                 <h2 class="widget-title">
-                    <?php _e( 'Related Posts', 'fusion' ) ?>
+                    <?php _e( 'Entradas relacionadas', 'fusion' ) ?>
                 </h2>
                 <div class="row related-post-entries">
                     <?php
@@ -152,13 +152,15 @@ if ( !function_exists('fusion_related_post') ) :
 
                     while ( $fusion_featured_query->have_posts() ) : $fusion_featured_query->the_post();
                         ?>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-12 related-post-entry"> 
                             <?php
                             if ( has_post_thumbnail() ):
                                 ?>
                                 <figure class="widget-image">
                                     <a href="<?php the_permalink()?>">
-                                        <?php the_post_thumbnail('fusion-small-thumb'); ?>
+                                        <?php 
+                                        // comrpobar settings.php (40) para tamaños
+                                        the_post_thumbnail(); ?>
                                     </a>
                                 </figure>
                             <?php
@@ -167,9 +169,12 @@ if ( !function_exists('fusion_related_post') ) :
                             <div class="featured-desc">
                                 <a href="<?php the_permalink()?>">
                                     <h2 class="title">
-                                       <?php the_title(); ?>
-                                    </h2>
+                                       <?php the_title(); ?>                                       
+                                    </h2>                                    
                                 </a>
+                                <p class="featured-info">
+                                    <?php fusion_posted_on(); ?>                                            
+                                </p>
                             </div>
                         </div>
                     <?php

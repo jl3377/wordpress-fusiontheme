@@ -55,12 +55,22 @@ body {
             .widget-title {
                 color: $color-links; 
                 font-size: 2rem;
+                margin-bottom: 30px;
             }
             .related-post-entries {
+                .related-post-entry {
+                    border-bottom: solid hsl(0, 0%, 85%) 1px;
+                    background: hsl(0, 0%, 99%);
+                    margin-bottom: 5px;
+                }  
                 .widget-image {
+                    margin: 0 0 1rem;
+                    float: left;
+                    width: 20%;
                     img {
-                        height: 120px;
-                        width: auto;
+                        height: 75px;
+                        object-fit: scale-down;
+                        width: 100%;
                         @include media-query(md) {
                             margin-right: 25px;
                             float: left;
@@ -73,10 +83,17 @@ body {
                 }
                 .featured-desc {
                     margin: 17px 0px 0px;
+                    padding-left: 25px;
+                    float: left;
+                    width: 75%;
                     h2 {
                         color: $color-links;
                         font-size:1.1rem;
                     }    
+                    .featured-info {
+                        color: #bfbfbf;
+                        font-size: 0.8rem;
+                    }
                 }
 
             }    

@@ -415,11 +415,26 @@ body {
 #content .content-left .related-pots-block .widget-title {
   color: #1ab798;
   font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#content .content-left .related-pots-block .related-post-entries .related-post-entry {
+  border-bottom: solid #d9d9d9 1px;
+  background: #fcfcfc;
+  margin-bottom: 5px;
+}
+
+#content .content-left .related-pots-block .related-post-entries .widget-image {
+  margin: 0 0 1rem;
+  float: left;
+  width: 20%;
 }
 
 #content .content-left .related-pots-block .related-post-entries .widget-image img {
-  height: 120px;
-  width: auto;
+  height: 75px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 100%;
 }
 
 @media screen and (max-width: 992px) {
@@ -433,11 +448,19 @@ body {
 
 #content .content-left .related-pots-block .related-post-entries .featured-desc {
   margin: 17px 0px 0px;
+  padding-left: 25px;
+  float: left;
+  width: 75%;
 }
 
 #content .content-left .related-pots-block .related-post-entries .featured-desc h2 {
   color: #1ab798;
   font-size: 1.1rem;
+}
+
+#content .content-left .related-pots-block .related-post-entries .featured-desc .featured-info {
+  color: #bfbfbf;
+  font-size: 0.8rem;
 }
 
 #content .content-left .comments-area a {

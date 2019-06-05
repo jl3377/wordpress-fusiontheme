@@ -68,7 +68,8 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-			$update_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+			if (get_the_date() != get_the_modified_date()) {
+			$time_string .= ' | Actualizado a: <time class="updated" datetime="%3$s">%4$s</time>'; }
 		}
 
 		$time_string = sprintf( $time_string,
@@ -89,7 +90,7 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
 
 		$updated_on = sprintf(
             '%s',
-            '' . $update_string
+            '' . $time_string
         );
         /*$byline = sprintf(
             '%s',
@@ -101,7 +102,9 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
         );
 
 		echo '<span class="byline"> ' . $byline . '</span> - '; 
-		echo '<span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="posted-on">' . $posted_on . $update_on. '</span> ';
+		//echo '<span class="updated-on">' . ' actualizado a '.the_modified_date('F j, Y') . '</span>';
+		//update_string
 
 	
 		

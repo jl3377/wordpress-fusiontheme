@@ -54,7 +54,7 @@ global $fusion_theme_options;
                      <?php } else { ?> 
                     <div class="entry-meta">
                     <?php } ?>    
-                        <?php fusion_posted_on(); ?>
+                        <?php fusion_posted_on(); // comprobar template_tags.php ?>
                         <?php //fusion_entry_category(); ?>
                     </div><!-- .entry-meta -->
                 <?php

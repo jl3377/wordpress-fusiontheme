@@ -34,9 +34,10 @@ if ( ! function_exists( 'fusion_setup' ) ) :
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+		 * @link https://developer.wordpress.org/reference/functions/add_image_size/
 		 */
 		add_theme_support( 'post-thumbnails' );
-        add_image_size( 'fusion-small-thumb', 350, 220, true );
+        add_image_size( 'fusion-small-thumb', 220, 180 ); // un tercer parámetro true con la opción true la recortaria
         add_image_size( 'fusion-large-thumb', 1170, 9999 );
 
 		// This theme uses wp_nav_menu() in one location.
