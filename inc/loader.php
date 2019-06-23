@@ -12,8 +12,9 @@ function add_styles() {
     //wp_enqueue_style('jquerymobile', 'ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css' );    
     wp_enqueue_style('bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', '4.1', array(), null, false);
     wp_enqueue_style('fontawesome', '//use.fontawesome.com/releases/v5.4.2/css/all.css', array(), null, false);    
-    //wp_enqueue_style('main',  get_template_directory_uri() . '/assets/css/dist/style.min.css' );   
-    wp_enqueue_style('main',  get_template_directory_uri() . '/assets/css/style.css', array(), null, false );     
+    wp_enqueue_style('main',  get_template_directory_uri() . '/assets/css/dist/style.min.css', array(), null, false );   
+    //wp_enqueue_style('main',  get_template_directory_uri() . '/assets/css/style.css', array(), null, false );    
+    
 }
 /*
  * funcion propia para incluir los scripts a nuestro layout

@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Sass Compile - compact",
+            "type": "shell",
+            "command": "node-sass assets/css/source/style.scss assets/css/dist/style.css --output-style compact --source-map true",
+            "group": "build"
+        },
+        {
+            "label": "Sass Compile - compressed and source map",
+            "type": "shell",
+            "command": "node-sass assets/css/source/style.scss assets/css/dist/style.min.css --output-style compressed --source-map true",
+            "group": "build"
+        }     
+    ]
+}
