@@ -26,7 +26,18 @@ global $fusion_theme_options;
             <div class="col-md-10 fpost">
             <?php } else {  ?>
             <div class="col-md-12 fpostsingle">
-            <?php } ?>       
+            <?php } ?>                
+            
+                <!-- show img mobile version -->
+                <div class="col-md-2 fimageMobile" style="">
+                <?php
+                    if(! ( is_singular() ) ){
+                        fusion_post_thumbnail();
+                    }
+                    else if( ( is_singular() ) && ( $fusion_theme_options['fusion-single-featured'] == 1 ) ) {
+                        fusion_post_thumbnail();
+                    } ?>
+                </div><!-- end mobile image -->
 
                 <header class="entry-header">
                 <?php

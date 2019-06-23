@@ -35,7 +35,17 @@
     // primary nav menu
     wp_nav_menu($conf); ?>  
     
+   
+
     <div class="collapse navbar-collapse w-100 order-2 dual-collapse2 social" id="navbarCollapse">
+
+        <div id="searchNav">
+            <form role="search" method="get" class="search-form" action="https://blog.artegrafico.net/">                
+                <input type="search" class="search-field" placeholder="Buscar ..." value="" name="s">                
+                <input type="submit" class="search-submit" value="Buscar">
+            </form>
+        </div> 
+
         <ul id="social" class="navbar-nav ml-auto">
             <li class="nav-item sozialize">
                 Let's Sozialize!
@@ -60,3 +70,12 @@
     </div>
         </div>
 </div><!-- End Bootstrap 4 Navigation Bar -->
+
+<!--
+<form role="search" method="get" class="search-form" action="https://blog.artegrafico.net/">
+    <label>
+        <span class="screen-reader-text">Buscar:</span>
+        <input type="search" class="search-field" placeholder="Buscar ..." value="" name="s">
+    </label>
+	<input type="submit" class="search-submit" value="Buscar">
+</form> -->

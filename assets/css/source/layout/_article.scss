@@ -125,5 +125,21 @@
     .edit-link {
         display:block;
     }
+
+    // mobile image thumbnail 
+    .fimageMobile {
+        display:none; // hide desktop
+        @media screen and (max-width: 992px) {
+            display: block;
+            width: 15%;
+            float: left;
+            margin: 0 10px 0 0;
+            padding: 0;
+            img {
+                width: 50px;
+                height: auto;                
+            }
+        }
+    }
 }
 

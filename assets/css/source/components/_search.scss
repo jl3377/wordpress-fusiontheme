@@ -1,0 +1,34 @@
+/**
+ * Search mobile menu
+ */
+
+#searchNav {
+
+    display: none;  // hide to desktop 
+
+}
+
+@include media-query(md) {
+
+    #searchNav {
+
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0 auto;
+
+        .search-field {      
+            float:left;
+            margin:  0 0 0 15px;   
+            width:50%;              
+        }
+        .search-submit {
+            margin: 0 0 0 15px;
+            background: hsl(0, 0%, 100%);    
+            padding: 10px;        
+        }   
+    }
+    
+}
+
+ 

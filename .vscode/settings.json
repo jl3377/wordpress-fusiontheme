@@ -28,7 +28,7 @@
     "liveSassCompile.settings.formats": [      
        // css programmer
        {
-          "format": "expanded",
+          "format": "compressed",
           "extensionName": ".css",
           "savePath": "/assets/css/"
        },
