@@ -3,7 +3,12 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased 
 ### Changed 
-- Update Footer ?
+- Update Footer 
+
+## [1.1] - 2019-06-23
+### Added
+- Feauture image in each entry
+- Search form for responsive page
 
 ## [1.0] - 2019-01-13
 ### Added
