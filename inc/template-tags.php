@@ -88,10 +88,10 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
             '' . $time_string
         );
 
-		$updated_on = sprintf(
+		/*$updated_on = sprintf(
             '%s',
             '' . $time_string
-        );
+        );*/
         /*$byline = sprintf(
             '%s',
             '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fas fa-user"></i>' . esc_html( get_the_author() ) . '</a></span>'
@@ -102,7 +102,7 @@ if ( ! function_exists( 'fusion_posted_on' ) ) :
         );
 
 		echo '<span class="byline"> ' . $byline . '</span> - '; 
-		echo '<span class="posted-on">' . $posted_on . $update_on. '</span> ';
+		echo '<span class="posted-on">' . $posted_on . '</span> ';
 		//echo '<span class="updated-on">' . ' actualizado a '.the_modified_date('F j, Y') . '</span>';
 		//update_string
 

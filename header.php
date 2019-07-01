@@ -3,7 +3,7 @@ $GLOBALS['fusion_theme_options'] = fusion_get_theme_options();
 global $fusion_theme_options; ?>
 
 <!DOCTYPE html>
-<html <?php language_attributes($doctype); ?>>
+<html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
