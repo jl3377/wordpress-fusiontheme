@@ -93,13 +93,13 @@
                 padding: 10px;
                 font-size: 1.2rem;
                 color: #464646;
-            }
+            } 
             p {
                 font-size: $font-size-base;
                 color: $color-dark-grey;
             }
             img {
-                width:100%;
+                //width:100%;
                 height:auto;
                 &.default-size-right {
                     width:auto;
@@ -129,7 +129,8 @@
     // mobile image thumbnail 
     .fimageMobile {
         display:none; // hide desktop
-        @media screen and (max-width: 992px) {
+        @include media-query(md) {
+        //@media screen and (max-width: 992px) {
             display: block;
             width: 15%;
             float: left;
